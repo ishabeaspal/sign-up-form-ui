@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    /* padding: 3px; */
+    /* border:1px solid green ; */
+    /* background-color: rgb(70, 196, 228); */
+}
+
+h1{
+    /* font-weight:700 ; */
+    font-family: Poppins;
+    font-size: 45px;
+
+}
+body{
+    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    color: white;
+    padding: 50px 50px 50px 50px;
+    flex: 50%;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-evenly;
+    height: 60vh;
+    padding: 50px 20px;
+    border-radius: 10px;
+
+}
+footer{
+    /* position: sticky; */
+    padding: 8px;
+    bottom: 0;
+    background-color: rgba(248, 198, 198, 0.1);
+    backdrop-filter: blur(10px);
+}
+.attribution{
+    color: white;
+    font-size: 18px;
+}
+
+.banner{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 2px rgba(0, 0, 0, 0.184) ;
+}
+.right{
+    flex: 50%;
+    padding: 20px 100px;
+}
+input{
+    margin:8px;
+    /* height: 3em; */
+    border-radius: 6px;
+    padding: 12px;
+    border:2px solid lightgray
+}
+input[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+    border:none;
+    color: white;
+    font-size: smaller;
+    /* padding: 20px 0px; */
+    box-shadow: 1px 3px 1px hsla(154, 52%, 18%, 0.747) ;
+    height: 4em;
+
+}
+input[type=submit]:hover{
+    background-color: hsla(154, 59%, 51%, 0.733)}
+p{
+    height: 20px;
+}
+form span{
+    text-align: center;
+    color: lightgrey;
+    font-size: 10px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+
+@media (max-width:800px) {
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .attribution{
+        font-size: 12px;
+    }
+}
